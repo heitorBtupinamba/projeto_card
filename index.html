@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body{
+            margin: 0%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000080;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
+
+        .card{
+            background-color: #003153;
+            padding: 20px;
+            border-radius: 12px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+        }
+
+        .imgperfil{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid rgb(255, 0, 0);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h2{
+            margin: 10px 0 5px;
+            font-size: 25px;
+        }
+
+        .local{
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .job{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .botoes{
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn{
+            padding: 10px 18px;
+            border-radius: 6px;
+            border: 1px solid rgb(0, 0, 0);
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            opacity: 0.8;
+            background: rgb(255, 206, 206);
+        }
+
+        .skills{
+            margin-top: 16px;
+            text-align: left;
+        }
+
+        .skills h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .tags{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag{
+            border: 1px solid aliceblue;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .social-media{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 20px;
+        }
+
+        .social-media i{
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .social-media i:hover{
+            color: brown;
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="caricatura2.png" alt="Foto de Perfil" class="imgperfil">
+        <h2>Heitor Antônio Botelho</h2>
+        <div class="local">Montes Claros - MG</div>
+        <div class="job">Técnico em Informática <br>Formado em Desenvolvimento de Sistemas</div>
+
+        <div class="botoes">
+            <button class="btn primario">Mensagem</button>
+            <button class="btn secundario">Follow</button>
+        </div>
+
+        <div class="skills">
+            <h3>Habilidades:</h3>
+            <div class="tags">
+                <span class="tag">Hardwares</span>
+                <span class="tag">Redes</span>
+                <span class="tag">Banco de Dados</span>
+                <span class="tag">VPN</span>
+                <span class="tag">Python</span>
+                <span class="tag">Paciência</span>
+                <span class="tag">Responsável</span>
+                <span class="tag">Aprendizado Rápido</span>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>       
+        </div>
+
+    </div>
+</body>
+</html>
